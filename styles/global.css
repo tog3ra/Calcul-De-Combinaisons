@@ -1,0 +1,174 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+*{
+	font-family: 'Open Sans', sans-serif;
+	margin:0px;
+	padding:0px;
+	list-style: none;
+	text-decoration:none;
+	box-sizing:border-box;
+}
+.clear{
+	clear:both;
+}
+
+
+/* Header */
+header{
+	position:fixed;
+	z-index:11;
+	background-color:#34495e;
+	padding:12px;
+	font-size:19px;
+	width:100%;
+}
+header a{
+	text-decoration:none;
+	color:#ecf0f1;
+}
+header a span{
+	font-weight:700;
+}
+
+
+
+
+/* NAV */
+label{
+	display:none;
+}
+
+
+
+/* CONTENT */
+#content{
+	background-color:#171717;
+	float:left;
+}
+
+
+
+/* LEFT MENU */
+aside{
+	float:left;
+	margin:0px;
+	padding:0px;
+	width:20%;
+	text-transform:capitalize;
+}
+aside ul{
+	list-style:none;
+}
+aside ul li a{
+	text-decoration:none;
+	color:#CCC;
+	display:block;
+	padding: 20px;
+	border-bottom:black 1px solid;
+	font-size:14px;
+	
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all.5s ease-in-out;
+	-o-transition: all .5s ease-in-out;
+	transition: all .5s ease-in-out;
+}
+
+aside ul a:hover {
+	padding-left:30px;
+	background-color:#030303;
+	color:#fff;
+}
+.selected{
+	padding-left:30px;
+	background-color:#030303;
+	color:#fff;
+}
+
+
+
+
+
+
+/* SECTION */
+section {
+	float:left;
+	width:80%;
+	margin:0px;
+	padding:10px 20px;
+	background-color:#ecf0f1;
+	min-height:calc(100% - 50px);
+}
+section div h1 {
+	text-transform:capitalize;
+	font-size:35px;
+}
+section div p{
+	color:#424242;
+	margin-bottom:5px;
+	font-size:13px;
+	font-family:verdana;
+}
+section article{
+	margin-bottom:10px;
+}
+section article h2{
+	background-color:#3498db;
+	color:white;
+	padding:10px;
+	font-weight:300;
+}
+section article p{
+	background-color:white;
+	padding:10px;
+}
+
+
+
+
+/* FOOTER */
+footer{
+	background-color:#34495e;
+	font-size:13px;
+	overflow:hidden;
+	text-transform:capitalize;
+}
+footer p {
+	margin:auto;
+	width:30%;
+	text-align:center;
+	color:#FFF;
+	padding:20px;
+}
+footer p:first-of-type{
+	float:left;
+}
+footer p:last-of-type{
+	float:right;
+}
+
+
+
+@media screen and (max-width:600px){
+	
+	aside{
+		display:none;
+		width:100%;
+		text-align:center;
+	}
+	section{
+		width:100%;
+	}
+	label{
+		display:block;
+		background-color:#171717;
+		color:#CCC;
+		text-align:center;
+		padding:5px;
+	}
+	label:hover{
+		cursor:pointer;
+	}
+	input:checked ~div aside{
+		display:block;
+	}
+	
+}
